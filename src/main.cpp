@@ -560,8 +560,6 @@ void setup()
 
   digitalWrite(redLed, LOW);
 
-  //messageHandlingEnabled = true;
-
   String welcome = "🤖 Sentinel Bot is now Online! 👁️\n\n";
   welcome += "Available Commands:\n";
   welcome += PHOTO_CMD + " - Take a photo 📸\n";
@@ -572,6 +570,8 @@ void setup()
   welcome += STATUS_CMD + " - Show system status 📊\n";
   welcome += MEMBERS_CMD + " - Show project team members 👥\n";
   welcome += HELP_CMD + " - Show this help message ℹ️";
+
+  messageHandlingEnabled = true;
 
   bot.sendMessage(CHAT_ID, welcome, "");
 
