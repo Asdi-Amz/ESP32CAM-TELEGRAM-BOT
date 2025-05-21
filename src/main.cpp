@@ -22,14 +22,11 @@
 #define DEBUG_PRINTF(...) // No-op
 #endif
 
-const char *ssid = "MR160 TP-Link";
-const char *password = "asdi54321";
+const char *ssid = "YOURWIFISSID";
+const char *password = "YOURWIFIPASSWORD";
 
-// const char *ssid = "CTUFreeWifi";
-// const char *password = "";
-
-String BOTtoken = "8003891375:AAE9BjU6yk0VNCKSKEgRyRiZ5Ym5DyFQTc4";
-String CHAT_ID = "7619087611";
+String BOTtoken = "XXXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+String CHAT_ID = "0000000000";
 
 bool sendPhoto = false;
 bool messageHandlingEnabled = true;
@@ -129,23 +126,6 @@ void configInitCamera()
   config.pixel_format = PIXFORMAT_JPEG;
   config.grab_mode = CAMERA_GRAB_LATEST;
 
-  /*
-
-  // init with high specs to pre-allocate larger buffers
-  if (psramFound())
-  {
-    config.frame_size = FRAMESIZE_UXGA;
-    config.jpeg_quality = 20; // 0-63 lower number means higher quality
-    config.fb_count = 1;
-  }
-  else
-  {
-    config.frame_size = FRAMESIZE_SVGA;
-    config.jpeg_quality = 25; // 0-63 lower number means higher quality
-    config.fb_count = 1;
-  }
-
-  */
 
   // Balanced High Quality
   if (psramFound())
