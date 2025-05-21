@@ -22,6 +22,9 @@
 #define DEBUG_PRINTF(...) // No-op
 #endif
 
+
+
+
 const char *ssid = "YOURWIFISSID";
 const char *password = "YOURWIFIPASSWORD";
 
