@@ -25,12 +25,14 @@
 
 
 
+
+
+
 const char *ssid = "YOURWIFISSID";
 const char *password = "YOURWIFIPASSWORD";
 
 String BOTtoken = "XXXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
 String CHAT_ID = "0000000000";
-
 bool sendPhoto = false;
 bool messageHandlingEnabled = true;
 
