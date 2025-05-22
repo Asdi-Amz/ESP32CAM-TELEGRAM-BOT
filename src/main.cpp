@@ -23,11 +23,6 @@
 #endif
 
 
-
-
-
-
-
 const char *ssid = "YOURWIFISSID";
 const char *password = "YOURWIFIPASSWORD";
 
