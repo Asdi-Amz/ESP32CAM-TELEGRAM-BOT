@@ -1,3 +1,8 @@
+/*Asdi Amamence BSCPE 1-7
+JUNE 4, 2025
+PROJECT FOR PHYSICS LAB
+*/
+
 #include <stdlib.h> //for rand()
 #include <Arduino.h>
 #include <WiFi.h>
@@ -8,7 +13,7 @@
 #include <UniversalTelegramBot.h>
 #include <ArduinoJson.h>
 
-// #define DEBUG
+// #define DEBUG //(for debugging, uncomment this)
 
 #ifdef DEBUG
 #define DEBUG_BEGIN(baud) Serial.begin(baud)
@@ -21,7 +26,6 @@
 #define DEBUG_PRINTLN(x)  // No-op
 #define DEBUG_PRINTF(...) // No-op
 #endif
-
 
 const char *ssid = "YOURWIFISSID";
 const char *password = "YOURWIFIPASSWORD";
@@ -125,7 +129,6 @@ void configInitCamera()
   config.xclk_freq_hz = 20000000;
   config.pixel_format = PIXFORMAT_JPEG;
   config.grab_mode = CAMERA_GRAB_LATEST;
-
 
   // Balanced High Quality
   if (psramFound())
